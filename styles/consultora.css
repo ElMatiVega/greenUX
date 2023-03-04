@@ -1,0 +1,136 @@
+.consultora {
+  max-width: 1448px;
+  width: auto;
+  padding: 40px;
+  min-height: 100vh;
+  height: auto;
+  margin: auto;
+  background: #aec279;
+}
+
+.container_img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container_img h2 {
+  font-size: 9rem;
+}
+
+.container_img svg {
+  transform: scale(1.3);
+}
+
+.servicios_descripcion {
+  font-size: 3.7rem;
+  margin-bottom: 5rem;
+  opacity: 0.8;
+}
+.container_ul {
+  width: 100%;
+  font-size: 1.6rem;
+  
+}
+
+.container_ul li{
+  list-style: none;
+  padding: 1.5rem;
+}
+.container_ul h3 {
+  font-size: 5rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.container_ul p {
+  font-size: 3rem;
+  opacity: 0.9;
+}
+
+.container_ul ul {
+  margin: 25px;
+  font-size: 2.5rem;
+}
+
+.consultora button {
+  padding: 0.85rem 3rem;
+  background-color: #fffad5;
+  font-size: 2rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  margin: 8.5rem 0;
+  cursor: pointer;
+  margin-left: 50%;
+  transform: translate(-65px, 0);
+}
+.contanier_info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 15vw;
+  padding-bottom: 10rem;
+}
+
+.contanier_info span {
+  font-size: 5rem;
+  text-align: center;
+  display: block;
+}
+
+.contanier_info p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 1120px) {
+  .container_img {
+    width: fit-content;
+    margin: auto;
+  }
+  .container_img h2 {
+    font-size: 7rem;
+  }
+
+  .container_img svg {
+    transform: scale(1);
+    position: absolute;
+    right: 5px;
+    top: -70px;
+  }
+
+  .servicios_descripcion {
+    font-size: 2.8rem;
+  }
+
+  .container_ul h3 {
+    font-size: 4rem;
+  }
+
+  .container_ul p {
+    font-size: 2rem;
+  }
+
+  .container_ul ul {
+    font-size: 1.85rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container_img h2 {
+    font-size: 5rem;
+  }
+
+  /* .container_img {
+    width: fit-content;
+  } */
+  .container_img svg {
+    transform: scale(0.6);
+    right: -20px;
+    top: -70px;
+  }
+}

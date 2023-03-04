@@ -1,0 +1,58 @@
+.button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  color: #ededed;
+}
+
+.daltonismo_container {
+  background-color: #436129;
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 7px;
+  position: absolute;
+  top: 45px;
+  left: -150px;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: 170px -20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.daltonismo_container::before {
+  content: "";
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #436129;
+  position: absolute;
+  top: -15px;
+  right: 18px;
+}
+
+.daltonismo_title {
+  margin: 28px;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+}
+
+.daltonismo_container input {
+  margin-right: 10px;
+  transform: scale(1.3);
+}
+
+.daltonismo_container ul {
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+.button .daltonismo_li {
+}
+
+.button:hover .daltonismo_container {
+  transform: scale(1);
+}
