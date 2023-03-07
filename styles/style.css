@@ -5,6 +5,7 @@
 }
 body {
   background-color: #fffad5;
+
 }
 
 html {
@@ -15,40 +16,14 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.barrita {
-  position: fixed;
-  top: 0;
-  margin-bottom:7rem;
-  width: 100%;
-  padding: 20px;
-  background-color: #aec279;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  
-}
 
-.barrita a#logo{
-  text-decoration: none;
-  color: #000000;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-.titulo{
-  display: flex;
-  justify-content: center;
-  padding: 50px 0;
-  margin-top: 6rem;
-  color:#436129;
-  font-size: 6rem;
-}
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 2rem;
-  overflow: hidden; 
+  overflow: hidden;
+  
 }
 
 nav a {
@@ -61,6 +36,7 @@ nav ul a {
   font-weight: bold;
   position: relative;
   padding: 1.3rem;
+   
 }
 
 nav ul a::before {
@@ -74,10 +50,13 @@ nav ul a::before {
   transform: scale(0);
   transition: 0.3s;
   transform-origin: left;
+  
+
 }
 
 nav ul a:hover::before {
   transform: scale(1);
+  
 }
 
 #ham-menu {
@@ -85,6 +64,7 @@ nav ul a:hover::before {
 }
 
 nav ul .button {
+  position: absolute;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -97,13 +77,46 @@ nav ul.active {
   transition: 0.5s ease-in-out;
 }
 
+.barrita {
+  position: fixed;
+  top: 0;
+  margin-bottom:7rem;
+  width: 100%;
+  padding: 20px;
+  background-color: #aec279;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  z-index: 100;
+  opacity: .8;
+}
+
+.barrita a#logo{
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.positionNav{
+  color:transparent;
+  height: 67px;
+  
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  margin-top: 6rem;
+  color:#436129;
+  font-size: 6rem;
+}
 .inicio {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   padding: 2rem 10% 0;
+  transition: all .5s ease-out; 
 }
 
 .inicio h1{
