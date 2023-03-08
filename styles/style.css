@@ -177,6 +177,7 @@ color: #aec279;
   color: #f1f1f1;
   letter-spacing: 1px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .mailto{
